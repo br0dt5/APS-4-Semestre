@@ -1,0 +1,62 @@
+Data: 2021-11-17
+Hora: 21:16:26
+
+Dados externos (Dados.csv)
+
+Teste n°1
+Número de elementos: 760
+Tempo: 8ms.
+
+Teste n°2
+Número de elementos: 760
+Tempo: 2ms.
+
+Teste n°3
+Número de elementos: 760
+Tempo: 2ms.
+
+Teste n°4
+Número de elementos: 760
+Tempo: 0ms.
+
+Teste n°5
+Número de elementos: 760
+Tempo: 0ms.
+
+Teste n°6
+Número de elementos: 760
+Tempo: 0ms.
+
+Tempo médio: 2ms.
+
+Dados aleatórios
+
+Inteiros:
+Teste n°1
+Número de elementos: 10000
+Tempo: 26ms.
+
+Teste n°2
+Número de elementos: 100000
+Tempo: 910ms.
+
+Teste n°3
+Número de elementos: 1000000
+Tempo: 86588ms.
+
+Tempo médio: 29174ms.
+
+Decimais:
+Teste n°1
+Número de elementos: 10000
+Tempo: 16ms.
+
+Teste n°2
+Número de elementos: 100000
+Tempo: 1661ms.
+
+Teste n°3
+Número de elementos: 1000000
+Tempo: 167415ms.
+
+Tempo médio: 56364ms.
