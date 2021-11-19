@@ -26,21 +26,17 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="200" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="364" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="820" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
                               <Component id="jButton2" min="-2" pref="160" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace min="-2" pref="500" max="-2" attributes="0"/>
                               <Component id="jButton3" min="-2" pref="160" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jScrollPane1" min="-2" pref="390" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jTextField1" min="-2" pref="412" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -55,10 +51,7 @@
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" pref="298" max="32767" attributes="0"/>
-                  <Component id="jTextField1" max="32767" attributes="0"/>
-              </Group>
+              <Component id="jScrollPane1" pref="298" max="32767" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButton2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
@@ -75,7 +68,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Melhor m&#xe9;todo de ordena&#xe7;&#xe3;o"/>
+        <Property name="text" type="java.lang.String" value="Conclus&#xe3;o"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -89,21 +82,18 @@
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Compara&#xe7;&#xe3;o entre os 3 m&#xe9;todos de ordena&#xe7;&#xe3;o escolhidos&#xa;&#xa;&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="Conforme os experimentos demonstram, todos os algoritmos de ordena&#xe7;&#xe3;o de dados s&#xe3;o muito&#xa;eficazes em cumprir sua fun&#xe7;&#xe3;o ao trabalharem com uma pequena cole&#xe7;&#xe3;o de dados, mas, como&#xa;tamb&#xe9;m pode ser notado, h&#xe1; uma incr&#xed;vel diferen&#xe7;a acontencendo entre eles conforme a&#xa;quantidade de dados aumenta. Enquanto uns conseguem se manter bem eficientes e&#xa;demonstrando uma excelente performance de execu&#xe7;&#xe3;o, outros apenas deixam claro que s&#xe3;o&#xa;muito inferiores quando operam com grande carga, entregando resultados com uma grande&#xa;diferen&#xe7;a de tempo se comparado com aqueles que apresentam uma melhor performance.&#xa;&#xa;Outro resultado que pode ser analisado &#xe9; a semelhan&#xe7;a da performance apresentada pelos&#xa;m&#xe9;todos QuickSort e MergeSort. Vale ressaltar que, por mais que tenham diferen&#xe7;as entre seus&#xa;algoritmos, ambos possuem uma estrat&#xe9;gia muito parecida - divis&#xe3;o e conquista - que&#xa;demonstrou ser muito eficaz em seu funcionamento.&#xa;&#xa;Com tudo isso, pode-se concluir que:&#xa;&#xa;1. InsertionSort, mesmo possuindo uma implementa&#xe7;&#xe3;o simples, apresenta efici&#xea;ncia ao trabalhar&#xa;com uma baixa quantidade de dados;&#xa;&#xa;2. MergeSort consegue entregar uma boa performance de execu&#xe7;&#xe3;o, tanto com pequenas quanto&#xa;grandes cole&#xe7;&#xf5;es de dados, e em troca somente &#xe9; necess&#xe1;rio a implementa&#xe7;&#xe3;o de um algoritmo&#xa;um pouco mais complexo;&#xa;&#xa;3. O t&#xe3;o famoso QuickSort, muito conhecido como o algoritmo de ordena&#xe7;&#xe3;o mais r&#xe1;pido para&#xa;in&#xfa;meras situa&#xe7;&#xf5;es, consegue demonstrar e provar que a sua fama faz jus ao seu nome.&#xa;&#xa;Vale lembrar que estes s&#xe3;o apenas alguns dos muitos algoritmos de ordena&#xe7;&#xe3;o de dados que&#xa;existem e que possuem estrat&#xe9;gias e complexidades diferentes das quais foram apresentadas,&#xa;e vale refor&#xe7;ar que esta aplica&#xe7;&#xe3;o tem como principal objetivo apenas informar e realizar uma&#xa;simples compara&#xe7;&#xe3;o entre os m&#xe9;todos abordados.&#xa;&#xa;Para retornar para a tela de sele&#xe7;&#xe3;o de m&#xe9;todos, clique em &apos;Voltar&apos;. E para finalizar a aplica&#xe7;&#xe3;o,&#xa;clique em &apos;Sair&apos;."/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" value="Explica&#xe7;&#xe3;o do melhor metodo de ordena&#xe7;&#xe3;o e a performance dele"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">

@@ -30,8 +30,9 @@ public class InsertionSortWindow extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
 
         setResizable(false);
 
@@ -40,17 +41,11 @@ public class InsertionSortWindow extends javax.swing.JFrame {
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("Explicação do Método de Ordenação\n\n\n\nInsertion Sort ou ordenação por inserção é o método que percorre\num vetor de elementos da esquerda para a direita e à medida que\navança vai ordenando os elementos à esquerda.\nÉ considerado um método de ordenação estável. Um método de\nordenação é estável se a ordem relativa dos itens iguais não se altera\ndurante a ordenação. O funcionamento do algoritmo é bem simples:\nconsiste em cada passo a partir do segundo elemento selecionar\no próximo item da sequência e colocá-lo no local apropriado de\nacordo com o critério de ordenação.\nNa pratica, ele analiza todos os elementos do array e aquele que for\no menor é colocado sempre a esquerda, após selecionar o menor e\ncolocá-lo a esqueda, ele percorre o array novamente procurando o\nmenor elemento e mantendo o anterior no mesmo local.\n\n");
+        jTextArea1.setText("Insertion Sort, ou ordenação por inserção, é um\nsimples método que percorre um vetor de\nelementos indo da esquerda para a direita, e,\nconforme avança, realiza a organização dos\nelementos à esquerda de sua posição atual\ndentro do vetor.\n\nPossui complexidade de O(n) no melhor caso e\nO(n²) no pior caso, e é considerado um método de\nordenação estável*.\n\nSeu funcionamento é bem simples: a cada passo\nrealizado, começando do segundo elemento, é\nrealizado uma comparação de seu valor com os\nvalores anteriormente ordenados, que estão\nlocalizados à esquerda do elemento atual, e\no coloca na posição mais apropriada.\nApós realizada a ordenação, seus passos são\nrepetidos sucessivamente até que o vetor inteiro é\npercorrido e, no final, completamente organizado.\n\n*Um método de ordenação é considerado\nestável caso a ordem relativa dos elementos\nconsiderados idênticos permanecerem a mesma.");
+        jTextArea1.setAutoscrolls(false);
         jScrollPane1.setViewportView(jTextArea1);
-
-        jTextField1.setEditable(false);
-        jTextField1.setText("performance do método de ordenação");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setBackground(new java.awt.Color(255, 69, 0));
         jButton2.setText("Voltar");
@@ -59,6 +54,14 @@ public class InsertionSortWindow extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Resultado dos testes:\n\n  Dados externos:\n\nQtd. de dados: 760.\nTempo médio: 2ms.\n\n\n  Dados aleatórios:\n\nQtd. de dados: 10000.\nTempo médio: 21ms.\n\nQtd. de dados: 100000.\nTempo médio: 1286ms.\n\nQtd. de dados: 1000000.\nTempo médio: 127002ms.");
+        jTextArea2.setAutoscrolls(false);
+        jScrollPane2.setViewportView(jTextArea2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,12 +73,12 @@ public class InsertionSortWindow extends javax.swing.JFrame {
                         .addGap(335, 335, 335)
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -86,19 +89,15 @@ public class InsertionSortWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE))
                 .addGap(20, 20, 20))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         dispose();
@@ -144,7 +143,8 @@ public class InsertionSortWindow extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }

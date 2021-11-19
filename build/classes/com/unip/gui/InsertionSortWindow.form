@@ -30,12 +30,12 @@
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="406" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="430" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextField1" min="-2" pref="412" max="-2" attributes="0"/>
                           <Component id="jButton2" min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="370" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -51,11 +51,11 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jTextField1" pref="298" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" max="32767" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" pref="366" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
           </Group>
@@ -82,21 +82,16 @@
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Explica&#xe7;&#xe3;o do M&#xe9;todo de Ordena&#xe7;&#xe3;o&#xa;&#xa;&#xa;&#xa;Insertion Sort ou ordena&#xe7;&#xe3;o por inser&#xe7;&#xe3;o &#xe9; o m&#xe9;todo que percorre&#xa;um vetor de elementos da esquerda para a direita e &#xe0; medida que&#xa;avan&#xe7;a vai ordenando os elementos &#xe0; esquerda.&#xa;&#xc9; considerado um m&#xe9;todo de ordena&#xe7;&#xe3;o est&#xe1;vel. Um m&#xe9;todo de&#xa;ordena&#xe7;&#xe3;o &#xe9; est&#xe1;vel se a ordem relativa dos itens iguais n&#xe3;o se altera&#xa;durante a ordena&#xe7;&#xe3;o. O funcionamento do algoritmo &#xe9; bem simples:&#xa;consiste em cada passo a partir do segundo elemento selecionar&#xa;o pr&#xf3;ximo item da sequ&#xea;ncia e coloc&#xe1;-lo no local apropriado de&#xa;acordo com o crit&#xe9;rio de ordena&#xe7;&#xe3;o.&#xa;Na pratica, ele analiza todos os elementos do array e aquele que for&#xa;o menor &#xe9; colocado sempre a esquerda, ap&#xf3;s selecionar o menor e&#xa;coloc&#xe1;-lo a esqueda, ele percorre o array novamente procurando o&#xa;menor elemento e mantendo o anterior no mesmo local.&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="Insertion Sort, ou ordena&#xe7;&#xe3;o por inser&#xe7;&#xe3;o, &#xe9; um&#xa;simples m&#xe9;todo que percorre um vetor de&#xa;elementos indo da esquerda para a direita, e,&#xa;conforme avan&#xe7;a, realiza a organiza&#xe7;&#xe3;o dos&#xa;elementos &#xe0; esquerda de sua posi&#xe7;&#xe3;o atual&#xa;dentro do vetor.&#xa;&#xa;Possui complexidade de O(n) no melhor caso e&#xa;O(n&#xb2;) no pior caso, e &#xe9; considerado um m&#xe9;todo de&#xa;ordena&#xe7;&#xe3;o est&#xe1;vel*.&#xa;&#xa;Seu funcionamento &#xe9; bem simples: a cada passo&#xa;realizado, come&#xe7;ando do segundo elemento, &#xe9;&#xa;realizado uma compara&#xe7;&#xe3;o de seu valor com os&#xa;valores anteriormente ordenados, que est&#xe3;o&#xa;localizados &#xe0; esquerda do elemento atual, e&#xa;o coloca na posi&#xe7;&#xe3;o mais apropriada.&#xa;Ap&#xf3;s realizada a ordena&#xe7;&#xe3;o, seus passos s&#xe3;o&#xa;repetidos sucessivamente at&#xe9; que o vetor inteiro &#xe9;&#xa;percorrido e, no final, completamente organizado.&#xa;&#xa;*Um m&#xe9;todo de ordena&#xe7;&#xe3;o &#xe9; considerado&#xa;est&#xe1;vel caso a ordem relativa dos elementos&#xa;considerados id&#xea;nticos permanecerem a mesma."/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" value="performance do m&#xe9;todo de ordena&#xe7;&#xe3;o"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -108,5 +103,26 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
       </Events>
     </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea2">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Resultado dos testes:&#xa;&#xa;  Dados externos:&#xa;&#xa;Qtd. de dados: 760.&#xa;Tempo m&#xe9;dio: 2ms.&#xa;&#xa;&#xa;  Dados aleat&#xf3;rios:&#xa;&#xa;Qtd. de dados: 10000.&#xa;Tempo m&#xe9;dio: 21ms.&#xa;&#xa;Qtd. de dados: 100000.&#xa;Tempo m&#xe9;dio: 1286ms.&#xa;&#xa;Qtd. de dados: 1000000.&#xa;Tempo m&#xe9;dio: 127002ms."/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

@@ -30,28 +30,21 @@ public class ConclusionWindow extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         setResizable(false);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel2.setText("Melhor método de ordenação");
+        jLabel2.setText("Conclusão");
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("Comparação entre os 3 métodos de ordenação escolhidos\n\n\n\n");
+        jTextArea1.setText("Conforme os experimentos demonstram, todos os algoritmos de ordenação de dados são muito\neficazes em cumprir sua função ao trabalharem com uma pequena coleção de dados, mas, como\ntambém pode ser notado, há uma incrível diferença acontencendo entre eles conforme a\nquantidade de dados aumenta. Enquanto uns conseguem se manter bem eficientes e\ndemonstrando uma excelente performance de execução, outros apenas deixam claro que são\nmuito inferiores quando operam com grande carga, entregando resultados com uma grande\ndiferença de tempo se comparado com aqueles que apresentam uma melhor performance.\n\nOutro resultado que pode ser analisado é a semelhança da performance apresentada pelos\nmétodos QuickSort e MergeSort. Vale ressaltar que, por mais que tenham diferenças entre seus\nalgoritmos, ambos possuem uma estratégia muito parecida - divisão e conquista - que\ndemonstrou ser muito eficaz em seu funcionamento.\n\nCom tudo isso, pode-se concluir que:\n\n1. InsertionSort, mesmo possuindo uma implementação simples, apresenta eficiência ao trabalhar\ncom uma baixa quantidade de dados;\n\n2. MergeSort consegue entregar uma boa performance de execução, tanto com pequenas quanto\ngrandes coleções de dados, e em troca somente é necessário a implementação de um algoritmo\num pouco mais complexo;\n\n3. O tão famoso QuickSort, muito conhecido como o algoritmo de ordenação mais rápido para\ninúmeras situações, consegue demonstrar e provar que a sua fama faz jus ao seu nome.\n\nVale lembrar que estes são apenas alguns dos muitos algoritmos de ordenação de dados que\nexistem e que possuem estratégias e complexidades diferentes das quais foram apresentadas,\ne vale reforçar que esta aplicação tem como principal objetivo apenas informar e realizar uma\nsimples comparação entre os métodos abordados.\n\nPara retornar para a tela de seleção de métodos, clique em 'Voltar'. E para finalizar a aplicação,\nclique em 'Sair'.");
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jScrollPane1.setViewportView(jTextArea1);
-
-        jTextField1.setEditable(false);
-        jTextField1.setText("Explicação do melhor metodo de ordenação e a performance dele");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setBackground(new java.awt.Color(255, 69, 0));
         jButton2.setText("Voltar");
@@ -76,19 +69,16 @@ public class ConclusionWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(200, 200, 200)
+                        .addGap(364, 364, 364)
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(500, 500, 500)
+                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -97,9 +87,7 @@ public class ConclusionWindow extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
-                    .addComponent(jTextField1))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -109,10 +97,6 @@ public class ConclusionWindow extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         dispose();
@@ -164,6 +148,5 @@ public class ConclusionWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

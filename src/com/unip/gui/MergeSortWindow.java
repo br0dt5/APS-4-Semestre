@@ -30,8 +30,9 @@ public class MergeSortWindow extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
 
         setResizable(false);
 
@@ -40,17 +41,11 @@ public class MergeSortWindow extends javax.swing.JFrame {
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("Explicação do Método de Ordenação\n\n\n\nO merge sort é um algoritimo de ordenação por divisão e conquista.\nMerge é a rotina que junta dois arrays ordenados em um outro\ntambém ordenado. Parecido com o quick sort ele aplica várias vezes\no particionamento para colocar os arrays no lugar correto, o merge \nsort pode aplicar essa ordenação mais de uma vez para chegar no\nresultado desejado.\nBasicamente, não queremos continuar criando arrays para mescla-las,\nIsso custa memória e processamento, porque para cada array\ncriado temos que transferir os elementos do array original para ele.\nO que fazemos então é classificar os dados no array de forma que\nsejam classificados de forma que parte deles seja já esteja ordenada\nda forma correta. Portanto, no Merge Sort, não mesclamos dois arrays,\nmas sim duas partes ordenadas do mesmo array.\n");
+        jTextArea1.setText("O merge sort, criado pelo matemático\nJohn Von Neumann em 1945 é um algoritimo de\nordenação que faz o uso da estratégia \"dividir e\nconquistar\". Possui complexidade O(n log n) para\ntodos os casos e é considerado um método\nestável*.\n\nTendo como base a estratégia de divisão e\nconquista, o algoritmo realiza a divisão de um\nconjunto com n elementos em 2 sub-conjuntos\nmenores. Essa divisão é realizada até que cada\nsub-conjunto possui apenas 2, ou até mesmo 1,\nelementos cada. Ao final, é realizado a comparação\ne ordenação desses sub-conjuntos.\n\nPara evitar a criação de novos vetores para depois\nuní-los, o que exige mais memória e\nprocessamento, o algoritmo realiza a divisão e\nclassificação de seus elementos de forma recursiva,\nde modo com seja possível o processo de\nordenação de seus elementos sem a necessidade\nda criação e uso de vários pequenos vetores. No\nfinal, é apenas necessário o uso de um vetor\nsecundário que ajudará a manipular e finalizar o\nprocedimento de ordenação.\n\n*Um método de ordenação é considerado\nestável caso a ordem relativa dos elementos\nconsiderados idênticos permanecerem a mesma.");
+        jTextArea1.setAutoscrolls(false);
         jScrollPane1.setViewportView(jTextArea1);
-
-        jTextField1.setEditable(false);
-        jTextField1.setText("performance do método de ordenação");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
 
         jButton2.setBackground(new java.awt.Color(255, 69, 0));
         jButton2.setText("Voltar");
@@ -60,6 +55,14 @@ public class MergeSortWindow extends javax.swing.JFrame {
             }
         });
 
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Resultado dos testes:\n\n  Dados externos:\n\nQtd. de dados: 760.\nTempo médio: 0ms.\n\n\n  Dados aleatórios:\n\nQtd. de dados: 10000.\nTempo médio: 2ms.\n\nQtd. de dados: 100000.\nTempo médio: 17ms.\n\nQtd. de dados: 1000000.\nTempo médio: 168ms.");
+        jTextArea2.setAutoscrolls(false);
+        jScrollPane2.setViewportView(jTextArea2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -67,15 +70,15 @@ public class MergeSortWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(356, 356, 356)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(356, 356, 356)
+                        .addComponent(jLabel2)))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -86,19 +89,16 @@ public class MergeSortWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jScrollPane1))
                 .addGap(20, 20, 20))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         dispose();
@@ -144,7 +144,8 @@ public class MergeSortWindow extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }

@@ -23,18 +23,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="404" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="430" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextField1" min="-2" pref="412" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="370" max="-2" attributes="0"/>
                           <Component id="jButton2" min="-2" pref="160" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -49,15 +49,15 @@
               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jTextField1" pref="295" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="298" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" pref="51" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="366" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -93,20 +93,36 @@
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Explica&#xe7;&#xe3;o do M&#xe9;todo de Ordena&#xe7;&#xe3;o&#xa;&#xa;&#xa;&#xa;O Algoritmo Quicksort, criado por C. A. R. Hoare em 1960 &#xe9; o m&#xe9;todo&#xa;de ordena&#xe7;&#xe3;o interna mais r&#xe1;pido que se conhece para uma ampla&#xa;variedade de situa&#xe7;&#xf5;es. Provavelmente &#xe9; o mais utilizado. &#xc9; um&#xa;algoritmo de compara&#xe7;&#xe3;o que emprega a estrat&#xe9;gia de &#x201c;divis&#xe3;o e&#xa;conquista&#x201d;. O funcionamento do Quick Sort &#xe9; baseada em uma&#xa;rotina fundamental cujo nome &#xe9; particionamento.&#xa;Particionar significa escolher qualquer n&#xfa;mero presente&#xa;no array, chamado de piv&#xf4;, e coloc&#xe1;-lo em uma posi&#xe7;&#xe3;o de&#xa;forma que todos os elementos &#xe0; esquerda sejam menores ou&#xa;iguais e todos os elementos &#xe0; direita sejam maiores."/>
+            <Property name="text" type="java.lang.String" value="O Algoritmo Quicksort, criado por C. A. R. Hoare&#xa;em 1960, &#xe9; o algoritmo de ordena&#xe7;&#xe3;o mais&#xa;r&#xe1;pido que se conhece para uma ampla variedade&#xa;de situa&#xe7;&#xf5;es, e provavelmente o mais utilizado&#xa;tamb&#xe9;m.&#xa;&#xa;O algoritmo faz uso da estrat&#xe9;gia de &#x201c;divis&#xe3;o e&#xa;conquista&#x201d; e tamb&#xe9;m utiliza um piv&#xf4; para&#xa;realizar o processo de ordena&#xe7;&#xe3;o, fazendo isso&#xa;de forma recursiva. Possui complexidade de&#xa;O(n log n) para o melhor caso e O(n&#xb2;) para o pior&#xa;caso, e n&#xe3;o &#xe9; um algorimo est&#xe1;vel*.&#xa;&#xa;Seu funcionamento acontece realizando a divis&#xe3;o&#xa;do vetor em problemas menores, fazendo o uso&#xa;de um piv&#xf4; que ir&#xe1; determinar a posi&#xe7;&#xe3;o onde&#xa;ser&#xe1; realizada a divis&#xe3;o. Essa divis&#xe3;o &#xe9; feita com&#xa;base no valor do vetor - que pode ser qualquer&#xa;elemento do conjunto - determinando onde os&#xa;valores do outros elementos ser&#xe3;o posicionados&#xa;em rela&#xe7;&#xe3;o ao piv&#xf4; (valores menores ou iguais de&#xa;um lado, e valores maiores do outro). Esse&#xa;partiocionamento acontece recursivamente at&#xe9; que&#xa;o vetor fique completamente ordenado&#xa;&#xa;*Um m&#xe9;todo de ordena&#xe7;&#xe3;o &#xe9; considerado&#xa;est&#xe1;vel caso a ordem relativa dos elementos&#xa;considerados id&#xea;nticos permanecerem a mesma."/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" value="performance do m&#xe9;todo de ordena&#xe7;&#xe3;o"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-      </Events>
-    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea2">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Resultado dos testes:&#xa;&#xa;  Dados externos:&#xa;&#xa;Qtd. de dados: 760.&#xa;Tempo m&#xe9;dio: 0ms.&#xa;&#xa;&#xa;  Dados aleat&#xf3;rios:&#xa;&#xa;Qtd. de dados: 10000.&#xa;Tempo m&#xe9;dio: 2ms.&#xa;&#xa;Qtd. de dados: 100000.&#xa;Tempo m&#xe9;dio: 12ms.&#xa;&#xa;Qtd. de dados: 1000000.&#xa;Tempo m&#xe9;dio: 123ms."/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

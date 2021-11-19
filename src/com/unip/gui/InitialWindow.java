@@ -39,7 +39,7 @@ public class InitialWindow extends javax.swing.JFrame {
         setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
-        jLabel1.setText("Bem Vindo!");
+        jLabel1.setText("Apresentação");
 
         jButton1.setText("Iniciar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -60,7 +60,8 @@ public class InitialWindow extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("Este programa foi feito para mostrar as diferentes formas que podemos ordenar os dados\nde geoprocessamento das imagens da floresta amazônica que permitem a fiscalização de ações\nde crimes ambientais. Os satélites geram cerca de 100 mil imagens de toda a região a cada 24 horas\ne criamos 3 formas para ordenar esses dados e no fim mostraremos qual é o mais eficiente entre os\n3 para termos mais performance e menos tempo consumido para o processamento dos dados\ncatalogados das imagens.");
+        jTextArea1.setText("Coleções de dados são conjuntos de informações que podem ser usados das mais diversas\nmaneiras e são amplamente utilizados ao redor do mundo. Seja essa coleção uma lista\ntelefônica, um livro de receitas, números de celulares ou até mesmo um banco de dados de\nclientes de uma loja, uma coisa é certa, essas coleções são muito comuns até mesmo no\ndia-a-dia de muitas pessoas.\n\nAo trabalhar com tais coleções, pode-se encontrar uma certa dificuldade para se realizar a\nmanipulação dos dados ou simplesmente a realização de uma consulta de um dado específico que\nesteja no meio desse conjunto. Mas, caso estejam previamente organizadas e ordenadas, isso\npode tornar os processos citados muito mais fáceis e simples de serem realizados.\n\nNo mundo tecnológico, tais coleções também são amplamente utilizados por empresas de grande\ne pequeno porte, como exemplo o já citado banco de dados de clientes de uma loja, e, assim\ncomo foi discutido no parágrafo anterior, o uso de coleções ordenadas possibilita a facilidade da\nmanipulação desses dados, que são normalmente armazenados em grande escala. Mas, antes\nde manipular os dados já organizados, antes é necessário fazer a organização em si, e, para que\nseja feito esse procedimento, é necessário fazer uso dos chamados 'algoritmos de ordenação\nde dados'.\n\nTais algoritmos são muito utilizados, e, graças a sua popularidade, há também bastante discussões\nsobre o assunto. Como deve ter sido notado, não existe um único algoritmo conhecido, mas sim\nvários, cada um com suas respectivas características.\n\nEsta aplicação visa apresentar ao usuário alguns desses diferentes métodos de ordenação que\nexistem (InsertionSort, MergeSort e QuickSort), explicar sobre suas características e\nfuncionamento, e, por fim, realizar testes, demonstrar e comparar a performance desses\nalgoritmos, e tirando conclusões sobre os dados adquiridos.\n\nOBS: Para a realização dos testes, foram realizados 2 testes diferentes: o primeiro utilizando\ndados externos extraídos de uma planilha sobre desmatamento ambiental nos municípios da\nAmazônia, fornecida pela INPE (dados públicos), e o segundo faz uso de números aleatórios\n(tanto inteiros quanto decimais) automaticamente gerados. Cada teste possui 6 sub-testes\ncronometrados e, ao final deles, é calculado uma média aritmética deles, em milisegundos.\nOutro ponto é que a quantidade de dados usado no primeiro teste - dados externos - é a\nmesma para todos os 6 sub-testes, e o segundo teste - dados aleatórios - possui um número\ncrescente de dados em cada sub-teste, sendo conjuntos de 10 mil, 100 mil e 1 milhão de dados,\ntanto para inteiros quanto para decimais, totalizando 6 sub-testes. Também foram criados\nrelatórios de cada um dos métodos com os dados obtidos nos experimentos, que podem ser\nencontrados na pasta 'performance_tests'.\n\nPara prosseguir, clique em 'Iniciar' e, logo em seguida, selecione o método que deseja ler sobre,\nou clique em 'Sair' para fechar a aplicação.");
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -76,11 +77,11 @@ public class InitialWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(352, 352, 352)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 818, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 818, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(331, 331, 331)
+                        .addComponent(jLabel1)))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -88,8 +89,8 @@ public class InitialWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(33, 33, 33)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 220, Short.MAX_VALUE)
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)

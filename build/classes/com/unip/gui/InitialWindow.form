@@ -40,12 +40,12 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="352" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Component id="jScrollPane1" min="-2" pref="818" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="331" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace pref="49" max="32767" attributes="0"/>
@@ -57,8 +57,8 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="66" max="32767" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="172" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="220" max="32767" attributes="0"/>
               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jButton2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
@@ -75,7 +75,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Bem Vindo!"/>
+        <Property name="text" type="java.lang.String" value="Apresenta&#xe7;&#xe3;o"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
@@ -112,7 +112,10 @@
               <Font name="Segoe UI" size="18" style="0"/>
             </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Este programa foi feito para mostrar as diferentes formas que podemos ordenar os dados&#xa;de geoprocessamento das imagens da floresta amaz&#xf4;nica que permitem a fiscaliza&#xe7;&#xe3;o de a&#xe7;&#xf5;es&#xa;de crimes ambientais. Os sat&#xe9;lites geram cerca de 100 mil imagens de toda a regi&#xe3;o a cada 24 horas&#xa;e criamos 3 formas para ordenar esses dados e no fim mostraremos qual &#xe9; o mais eficiente entre os&#xa;3 para termos mais performance e menos tempo consumido para o processamento dos dados&#xa;catalogados das imagens."/>
+            <Property name="text" type="java.lang.String" value="Cole&#xe7;&#xf5;es de dados s&#xe3;o conjuntos de informa&#xe7;&#xf5;es que podem ser usados das mais diversas&#xa;maneiras e s&#xe3;o amplamente utilizados ao redor do mundo. Seja essa cole&#xe7;&#xe3;o uma lista&#xa;telef&#xf4;nica, um livro de receitas, n&#xfa;meros de celulares ou at&#xe9; mesmo um banco de dados de&#xa;clientes de uma loja, uma coisa &#xe9; certa, essas cole&#xe7;&#xf5;es s&#xe3;o muito comuns at&#xe9; mesmo no&#xa;dia-a-dia de muitas pessoas.&#xa;&#xa;Ao trabalhar com tais cole&#xe7;&#xf5;es, pode-se encontrar uma certa dificuldade para se realizar a&#xa;manipula&#xe7;&#xe3;o dos dados ou simplesmente a realiza&#xe7;&#xe3;o de uma consulta de um dado espec&#xed;fico que&#xa;esteja no meio desse conjunto. Mas, caso estejam previamente organizadas e ordenadas, isso&#xa;pode tornar os processos citados muito mais f&#xe1;ceis e simples de serem realizados.&#xa;&#xa;No mundo tecnol&#xf3;gico, tais cole&#xe7;&#xf5;es tamb&#xe9;m s&#xe3;o amplamente utilizados por empresas de grande&#xa;e pequeno porte, como exemplo o j&#xe1; citado banco de dados de clientes de uma loja, e, assim&#xa;como foi discutido no par&#xe1;grafo anterior, o uso de cole&#xe7;&#xf5;es ordenadas possibilita a facilidade da&#xa;manipula&#xe7;&#xe3;o desses dados, que s&#xe3;o normalmente armazenados em grande escala. Mas, antes&#xa;de manipular os dados j&#xe1; organizados, antes &#xe9; necess&#xe1;rio fazer a organiza&#xe7;&#xe3;o em si, e, para que&#xa;seja feito esse procedimento, &#xe9; necess&#xe1;rio fazer uso dos chamados &apos;algoritmos de ordena&#xe7;&#xe3;o&#xa;de dados&apos;.&#xa;&#xa;Tais algoritmos s&#xe3;o muito utilizados, e, gra&#xe7;as a sua popularidade, h&#xe1; tamb&#xe9;m bastante discuss&#xf5;es&#xa;sobre o assunto. Como deve ter sido notado, n&#xe3;o existe um &#xfa;nico algoritmo conhecido, mas sim&#xa;v&#xe1;rios, cada um com suas respectivas caracter&#xed;sticas.&#xa;&#xa;Esta aplica&#xe7;&#xe3;o visa apresentar ao usu&#xe1;rio alguns desses diferentes m&#xe9;todos de ordena&#xe7;&#xe3;o que&#xa;existem (InsertionSort, MergeSort e QuickSort), explicar sobre suas caracter&#xed;sticas e&#xa;funcionamento, e, por fim, realizar testes, demonstrar e comparar a performance desses&#xa;algoritmos, e tirando conclus&#xf5;es sobre os dados adquiridos.&#xa;&#xa;OBS: Para a realiza&#xe7;&#xe3;o dos testes, foram realizados 2 testes diferentes: o primeiro utilizando&#xa;dados externos extra&#xed;dos de uma planilha sobre desmatamento ambiental nos munic&#xed;pios da&#xa;Amaz&#xf4;nia, fornecida pela INPE (dados p&#xfa;blicos), e o segundo faz uso de n&#xfa;meros aleat&#xf3;rios&#xa;(tanto inteiros quanto decimais) automaticamente gerados. Cada teste possui 6 sub-testes&#xa;cronometrados e, ao final deles, &#xe9; calculado uma m&#xe9;dia aritm&#xe9;tica deles, em milisegundos.&#xa;Outro ponto &#xe9; que a quantidade de dados usado no primeiro teste - dados externos - &#xe9; a&#xa;mesma para todos os 6 sub-testes, e o segundo teste - dados aleat&#xf3;rios - possui um n&#xfa;mero&#xa;crescente de dados em cada sub-teste, sendo conjuntos de 10 mil, 100 mil e 1 milh&#xe3;o de dados,&#xa;tanto para inteiros quanto para decimais, totalizando 6 sub-testes. Tamb&#xe9;m foram criados&#xa;relat&#xf3;rios de cada um dos m&#xe9;todos com os dados obtidos nos experimentos, que podem ser&#xa;encontrados na pasta &apos;performance_tests&apos;.&#xa;&#xa;Para prosseguir, clique em &apos;Iniciar&apos; e, logo em seguida, selecione o m&#xe9;todo que deseja ler sobre,&#xa;ou clique em &apos;Sair&apos; para fechar a aplica&#xe7;&#xe3;o."/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Default Cursor"/>
+            </Property>
           </Properties>
         </Component>
       </SubComponents>

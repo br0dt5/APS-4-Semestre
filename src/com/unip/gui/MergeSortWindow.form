@@ -23,20 +23,20 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="430" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jButton2" min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="jScrollPane2" min="-2" pref="370" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="356" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="416" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jTextField1" min="-2" pref="412" max="-2" attributes="0"/>
-                          <Component id="jButton2" min="-2" pref="160" max="-2" attributes="0"/>
-                      </Group>
                   </Group>
               </Group>
               <EmptySpace pref="40" max="32767" attributes="0"/>
@@ -51,9 +51,10 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="jTextField1" pref="298" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" min="-2" pref="298" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" pref="50" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane1" max="32767" attributes="0"/>
               </Group>
@@ -82,21 +83,16 @@
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Explica&#xe7;&#xe3;o do M&#xe9;todo de Ordena&#xe7;&#xe3;o&#xa;&#xa;&#xa;&#xa;O merge sort &#xe9; um algoritimo de ordena&#xe7;&#xe3;o por divis&#xe3;o e conquista.&#xa;Merge &#xe9; a rotina que junta dois arrays ordenados em um outro&#xa;tamb&#xe9;m ordenado. Parecido com o quick sort ele aplica v&#xe1;rias vezes&#xa;o particionamento para colocar os arrays no lugar correto, o merge &#xa;sort pode aplicar essa ordena&#xe7;&#xe3;o mais de uma vez para chegar no&#xa;resultado desejado.&#xa;Basicamente, n&#xe3;o queremos continuar criando arrays para mescla-las,&#xa;Isso custa mem&#xf3;ria e processamento, porque para cada array&#xa;criado temos que transferir os elementos do array original para ele.&#xa;O que fazemos ent&#xe3;o &#xe9; classificar os dados no array de forma que&#xa;sejam classificados de forma que parte deles seja j&#xe1; esteja ordenada&#xa;da forma correta. Portanto, no Merge Sort, n&#xe3;o mesclamos dois arrays,&#xa;mas sim duas partes ordenadas do mesmo array.&#xa;"/>
+            <Property name="text" type="java.lang.String" value="O merge sort, criado pelo matem&#xe1;tico&#xa;John Von Neumann em 1945 &#xe9; um algoritimo de&#xa;ordena&#xe7;&#xe3;o que faz o uso da estrat&#xe9;gia &quot;dividir e&#xa;conquistar&quot;. Possui complexidade O(n log n) para&#xa;todos os casos e &#xe9; considerado um m&#xe9;todo&#xa;est&#xe1;vel*.&#xa;&#xa;Tendo como base a estrat&#xe9;gia de divis&#xe3;o e&#xa;conquista, o algoritmo realiza a divis&#xe3;o de um&#xa;conjunto com n elementos em 2 sub-conjuntos&#xa;menores. Essa divis&#xe3;o &#xe9; realizada at&#xe9; que cada&#xa;sub-conjunto possui apenas 2, ou at&#xe9; mesmo 1,&#xa;elementos cada. Ao final, &#xe9; realizado a compara&#xe7;&#xe3;o&#xa;e ordena&#xe7;&#xe3;o desses sub-conjuntos.&#xa;&#xa;Para evitar a cria&#xe7;&#xe3;o de novos vetores para depois&#xa;un&#xed;-los, o que exige mais mem&#xf3;ria e&#xa;processamento, o algoritmo realiza a divis&#xe3;o e&#xa;classifica&#xe7;&#xe3;o de seus elementos de forma recursiva,&#xa;de modo com seja poss&#xed;vel o processo de&#xa;ordena&#xe7;&#xe3;o de seus elementos sem a necessidade&#xa;da cria&#xe7;&#xe3;o e uso de v&#xe1;rios pequenos vetores. No&#xa;final, &#xe9; apenas necess&#xe1;rio o uso de um vetor&#xa;secund&#xe1;rio que ajudar&#xe1; a manipular e finalizar o&#xa;procedimento de ordena&#xe7;&#xe3;o.&#xa;&#xa;*Um m&#xe9;todo de ordena&#xe7;&#xe3;o &#xe9; considerado&#xa;est&#xe1;vel caso a ordem relativa dos elementos&#xa;considerados id&#xea;nticos permanecerem a mesma."/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField1">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-        <Property name="text" type="java.lang.String" value="performance do m&#xe9;todo de ordena&#xe7;&#xe3;o"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -108,5 +104,26 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
       </Events>
     </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea2">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="18" style="0"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Resultado dos testes:&#xa;&#xa;  Dados externos:&#xa;&#xa;Qtd. de dados: 760.&#xa;Tempo m&#xe9;dio: 0ms.&#xa;&#xa;&#xa;  Dados aleat&#xf3;rios:&#xa;&#xa;Qtd. de dados: 10000.&#xa;Tempo m&#xe9;dio: 2ms.&#xa;&#xa;Qtd. de dados: 100000.&#xa;Tempo m&#xe9;dio: 17ms.&#xa;&#xa;Qtd. de dados: 1000000.&#xa;Tempo m&#xe9;dio: 168ms."/>
+            <Property name="autoscrolls" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

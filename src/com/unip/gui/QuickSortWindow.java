@@ -31,7 +31,8 @@ public class QuickSortWindow extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jTextField1 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
 
         setResizable(false);
 
@@ -48,17 +49,19 @@ public class QuickSortWindow extends javax.swing.JFrame {
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jTextArea1.setRows(5);
-        jTextArea1.setText("Explicação do Método de Ordenação\n\n\n\nO Algoritmo Quicksort, criado por C. A. R. Hoare em 1960 é o método\nde ordenação interna mais rápido que se conhece para uma ampla\nvariedade de situações. Provavelmente é o mais utilizado. É um\nalgoritmo de comparação que emprega a estratégia de “divisão e\nconquista”. O funcionamento do Quick Sort é baseada em uma\nrotina fundamental cujo nome é particionamento.\nParticionar significa escolher qualquer número presente\nno array, chamado de pivô, e colocá-lo em uma posição de\nforma que todos os elementos à esquerda sejam menores ou\niguais e todos os elementos à direita sejam maiores.");
+        jTextArea1.setText("O Algoritmo Quicksort, criado por C. A. R. Hoare\nem 1960, é o algoritmo de ordenação mais\nrápido que se conhece para uma ampla variedade\nde situações, e provavelmente o mais utilizado\ntambém.\n\nO algoritmo faz uso da estratégia de “divisão e\nconquista” e também utiliza um pivô para\nrealizar o processo de ordenação, fazendo isso\nde forma recursiva. Possui complexidade de\nO(n log n) para o melhor caso e O(n²) para o pior\ncaso, e não é um algorimo estável*.\n\nSeu funcionamento acontece realizando a divisão\ndo vetor em problemas menores, fazendo o uso\nde um pivô que irá determinar a posição onde\nserá realizada a divisão. Essa divisão é feita com\nbase no valor do vetor - que pode ser qualquer\nelemento do conjunto - determinando onde os\nvalores do outros elementos serão posicionados\nem relação ao pivô (valores menores ou iguais de\num lado, e valores maiores do outro). Esse\npartiocionamento acontece recursivamente até que\no vetor fique completamente ordenado\n\n*Um método de ordenação é considerado\nestável caso a ordem relativa dos elementos\nconsiderados idênticos permanecerem a mesma.");
+        jTextArea1.setAutoscrolls(false);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jTextField1.setEditable(false);
-        jTextField1.setText("performance do método de ordenação");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
+        jTextArea2.setEditable(false);
+        jTextArea2.setColumns(20);
+        jTextArea2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Resultado dos testes:\n\n  Dados externos:\n\nQtd. de dados: 760.\nTempo médio: 0ms.\n\n\n  Dados aleatórios:\n\nQtd. de dados: 10000.\nTempo médio: 2ms.\n\nQtd. de dados: 100000.\nTempo médio: 12ms.\n\nQtd. de dados: 1000000.\nTempo médio: 123ms.");
+        jTextArea2.setAutoscrolls(false);
+        jScrollPane2.setViewportView(jTextArea2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,11 +73,11 @@ public class QuickSortWindow extends javax.swing.JFrame {
                         .addGap(362, 362, 362)
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 404, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(40, Short.MAX_VALUE))
         );
@@ -84,13 +87,13 @@ public class QuickSortWindow extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane1))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
@@ -99,10 +102,6 @@ public class QuickSortWindow extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,7 +143,8 @@ public class QuickSortWindow extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }
