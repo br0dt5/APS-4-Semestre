@@ -1,5 +1,9 @@
 package com.unip.util.sorting;
 
+/**
+ * Realiza a ordenação de um vetor utilizando o método de ordenação InsertionSort.
+ * @author luanz
+ */
 public class InsertionSort {
 
     public static void sort(int[] array) {

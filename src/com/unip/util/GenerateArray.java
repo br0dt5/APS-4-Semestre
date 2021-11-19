@@ -3,7 +3,8 @@ package com.unip.util;
 import java.util.Random;
 
 /**
- *
+ * Criador de vetores de números pseudoaleatórios,
+ * de tamanho n informado por parâmetro, e retorna o array gerado.
  * @author luanz
  */
 public class GenerateArray {

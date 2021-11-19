@@ -5,6 +5,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+/**
+ * Realiza a leitura de um arquivo e retorna o conteúdo presente nele.
+ * @author luanz
+ */
 public class ReadFile {
 
     private static BufferedReader reader(String filename) throws IOException{

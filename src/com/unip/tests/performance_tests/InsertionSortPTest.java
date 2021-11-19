@@ -10,11 +10,13 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
 /**
- *
+ * Realiza os testes de performance do método InsertionSort,
+ * e ao final, gravando os resultados obtidos em um log.
  * @author luanz
  */
 public class InsertionSortPTest {
     public static void main(String[] args) {
+        // Leitura e separação do conteúdo a ser utilizado em um ArrayList.
         try {
             ArrayList<String[]> content = ReadFile.getFileContent("Dados.csv", ";");
             float[] array = new float[content.size()-1];
@@ -24,6 +26,7 @@ public class InsertionSortPTest {
             
             string.append("Dados externos (Dados.csv)\n");
 
+            // Realiza a separação da coluna de dados a ser utilizada nos testes.
             for (int i = 4; i < 10; i++) {
                 k = 0;
                 for (int j = 1; j < content.size(); j++) {
@@ -45,6 +48,8 @@ public class InsertionSortPTest {
             int arrayLength = 10000;
             avgTime = 0;
             
+            // Testes com números inteiros aleatórios, com
+            // quantidades de 10000, 100000 e 1000000 de elementos.
             for (int i = 0; i < 3; i++) {
                 int[] intArray = GenerateArray.generateIntArray(arrayLength);
                 long totalTime = TimedSorts.timedInsertionSort(intArray);
@@ -64,6 +69,8 @@ public class InsertionSortPTest {
             arrayLength = 10000;
             avgTime = 0;
             
+            // Testes com números decimais aleatórios, com
+            // quantidades de 10000, 100000 e 1000000 de elementos.
             for (int i = 0; i < 3; i++) {
                 float[] floatArray = GenerateArray.generateFloatArray(arrayLength);
                 long totalTime = TimedSorts.timedInsertionSort(floatArray);
@@ -78,6 +85,7 @@ public class InsertionSortPTest {
             avgTime /= 3;
             string.append("\nTempo médio: " + avgTime + "ms.\n");
             
+            // Geração do log com os resultados obtidos.
             LogGenerator.newLog("InsertionSort", String.valueOf(string));
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Arquivo não encontrado!");

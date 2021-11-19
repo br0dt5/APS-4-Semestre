@@ -1,7 +1,8 @@
 package com.unip.util.sorting;
 
 /**
- *
+ * Realiza a ordenação de um vetor, possibilitando a seleção do método de
+ * ordenação a ser utilizado, e retorna o tempo total do procedimento, em ms.
  * @author luanz
  */
 public class TimedSorts {

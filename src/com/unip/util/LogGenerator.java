@@ -6,7 +6,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 
 /**
- *
+ * Faz a criação de logs, em formato .txt, com o nome e conteúdo
+ * ambos informados por parâmetros.
  * @author luanz
  */
 public class LogGenerator {

@@ -1,5 +1,9 @@
 package com.unip.util.sorting;
 
+/**
+ * Realiza a ordenação de um vetor utilizando o método de ordenação MergeSort.
+ * @author luanz
+ */
 public class MergeSort {
 
     public static void sort(int[] array, int[] aux, int begin, int end) {
