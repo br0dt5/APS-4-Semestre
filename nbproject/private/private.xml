@@ -3,12 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/sorting/QuickSort.java</file>
             <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/ConclusionWindow.java</file>
-            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/MergeSortWindow.java</file>
-            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/InitialWindow.java</file>
             <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/InsertionSortWindow.java</file>
-            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/QuickSortWindow.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/GenerateArray.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/sorting/InsertionSort.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/sorting/TimedSorts.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/tests/performance_tests/InsertionSortPTest.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/InitialWindow.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/tests/performance_tests/MergeSortPTest.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/tests/performance_tests/QuickSortPTest.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/MergeSortWindow.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/sorting/MergeSort.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/ReadFile.java</file>
             <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/ChooseMethodWindow.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/gui/QuickSortWindow.java</file>
+            <file>file:/C:/Users/luanz/OneDrive/Documentos/Faculdade/APS/4°%20Semestre/APS/src/com/unip/util/LogGenerator.java</file>
         </group>
     </open-files>
 </project-private>
